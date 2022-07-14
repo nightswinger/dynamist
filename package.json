@@ -1,0 +1,14 @@
+{
+  "name": "dynamist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.4",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.128.0",
+    "@aws-sdk/lib-dynamodb": "^3.128.0"
+  }
+}
