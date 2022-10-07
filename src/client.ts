@@ -1,4 +1,4 @@
-import { DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb'
+import type { DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb'
 import ddbDocClient from './ddbDocClient'
 import QueryBuilder from './queryBuilder'
 
@@ -9,8 +9,8 @@ class Client {
     this.ddbDocClient = ddbDocClient
   }
 
-  query() {
-    return new QueryBuilder(this.ddbDocClient)
+  table(name: string) {
+    return new QueryBuilder(this.ddbDocClient).table(name)
   }
 }
 
